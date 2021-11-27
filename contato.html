@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+
+    <main class="contato">
+        <h1 class="contato__titulo">Olá Turista</h1>
+        <form action="/contato" class="formulario" method="POST">
+
+            <div class="formulario__grupo">
+                <!--Campos Obrigatórios-->
+                <div>
+                    <label 
+                        class="contato__rotulo" 
+                        for="nome">Nome completo
+                    </label>
+                    <input 
+                        class="contato__campo"
+                        name="nome" 
+                        id="nome"
+                        type="text" 
+                        maxlength="100"
+                        placeholder="Digite seu nome"
+                        required>
+                        <small>até 100 caracteres</small>
+                </div>
+
+                <div>
+                    <label 
+                        class="email__rotulo" 
+                        for="e-mail">E-mail</label>
+                    <input class="email__campo"
+                        name="e-mail"
+                        id="e-mail"
+                        type="text"
+                        placeholder="Digite seu e-mail"
+                        required>
+                </div>
+
+                <div>
+                    <label 
+                        class="tel__rotulo" 
+                        for="telefone">Telefone</label>
+                    <input class="tel__campo" 
+                        name="telefone" 
+                        id="telefone" 
+                        type="tel"
+                        placeholder="+55 (__) ____________"
+                        required>
+                        <small>somente numeros</small>
+                </div>
+
+                <div>
+                    <label 
+                        class="data__rotulo" 
+                        for="data__nascimento">Data de Nascimento</label>
+                    <input class="data__campo" 
+                        name="data__nascimento" 
+                        id="data__nascimento" 
+                        type="date"     
+                        required>
+                </div>
+                <!--Campos Opcionais-->
+                <div>
+                    <h4>Você é maior de 18 anos?</h4>
+                    <input class="maior__idade"
+                        name="idade"
+                        id="idade"
+                        type="radio"
+                        value="maior__18">
+                    <label for="Sim">Sim</label>
+                    <input class="menor__idade" 
+                        name="idade" 
+                        id="idade" 
+                        type="radio" 
+                        value="menor__18">
+                    <label for="Não">Não</label>    
+                </div>
+
+                <div>
+                    <h4>Quais seus pontos de interesse na cidade?</h4>
+                    <input class="pontos__interesses"
+                        name="pontos"
+                        id="beach__park"
+                        type="checkbox"
+                        value="beach__park">
+                    <label for="beach__park">Beach Park</label>
+
+                    <input class="pontos__interesses" 
+                            name="pontos" 
+                            id="canoa__quebrada" 
+                            type="checkbox" 
+                            value="canoa__quebrada">
+                    <label for="canoa__quebrada">Canoa Quebrada</label>
+
+                    <input class="pontos__interesses" 
+                            name="pontos" id="dragao__mar"
+                            type="checkbox" 
+                            value="dragao__mar">
+                    <label for="dragao__mar">Dragão do Mar</label>
+
+                    <input class="pontos__interesses" 
+                            name="pontos" 
+                            id="iracema" 
+                            type="checkbox" 
+                            value="iracema">
+                    <label for="iracema">Praia de iracema</label>
+
+                    <input class="pontos__interesses" 
+                            name="pontos" 
+                            id="museu__cachaça" 
+                            type="checkbox" 
+                            value="museu__cachaça" >
+                    <label for="museu__cachaça" >Museu da Cachaça</label>
+
+                    <input class="pontos__interesses" 
+                            name="pontos" 
+                            id="teatro__ja" 
+                            type="checkbox" 
+                            value="teatro__ja" >
+                    <label for="teatro__ja" >Theatro José de Alencar</label>
+                </div>
+
+                <div>
+                    <h2>Quais seus interesses na cidade?</h2>
+                    <select name="select">
+                        <optgroup label="">
+                            <option value="turista">Turista/option>
+                            <option value="residente">Residente</option>
+                            <option value="estudante">Estudante</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                        <!--Botão resetar dados do formulário (só funciona se tiver a tag form)-->
+                        <div class="boton__apagar">
+                            <input type="reset" value="Apagar" />
+                        </div>
+
+                        <!--Botão de envio dos dados do formulário-->
+                        <div class="boton__enviar"> 
+                            <input type="submit" value="Enviar"/>
+                        </div>
+                        
+                            
+                    </select>
+                </div>
+                
+                
+
+            </div>
+            
+                
+            
+        </form>
+        </main>
+    
+</body>
+</html>
